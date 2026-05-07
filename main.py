@@ -19,7 +19,6 @@ print("\nДані після Label Encoding:")
 print(df)
 
 # ---------------- ONE-HOT ENCODING ----------------
-# Додано dtype=int для виводу 0 та 1 замість True/False
 df_one_hot = pd.get_dummies(df[['Колір']], columns=['Колір'], dtype=int)
 
 print("\nДані після One-Hot Encoding:")
